@@ -56,4 +56,8 @@ public class LaptopController {
 		laptopService.deleteLaptopById(id);
 		return new ResponseEntity<String>("Laptop has been deleted sucessfully!!!", HttpStatus.OK);
 	}
+	@GetMapping("/aws-check")
+	public ResponseEntity<String> sucessDeployedMessag(){
+		return new ResponseEntity<String>("Code has been updated on aws", HttpStatus.OK);
+	}
 }
